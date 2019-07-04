@@ -1,11 +1,18 @@
 import module1
-import importlib
+import base_modules
+#import importlib
 
-module_name='hlz'
+#module_name='hlz'
 
-f = open('module1.py', 'a')
-f.write('\ndef hlz():\n print(\'helloworldz\')')
-f.close() 
+texts="texts/testidiom.txt"
 
-importlib.reload(module1)
+textdata = base_modules.textfile_wordfile_creator(texts)
+
+print(textdata)
+
+#f = open('module1.py', 'a')
+#f.write('\ndef hlz():\n print(\'helloworldz\')')
+#f.close() 
+
+#importlib.reload(module1)
 
