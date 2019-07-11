@@ -7,6 +7,10 @@ import linecache
 #def file_closer(open_files):
 #	open_files.close()
 
+#
+# how to : base_modules.textfile_wordfile_creator(texts)
+# return : arrayList
+#
 def textfile_wordfile_creator(file_name):
 	# ファイルを開く
 	file_data = open(file_name, "r")
