@@ -30,5 +30,8 @@ def say_datetime():
     text = '%s月%s日、%s時%s分%s秒' % (d.month, d.day, d.hour, d.minute, d.second)
     jtalk(text)
 
+def say(message):
+    jtalk(message)
+
 if __name__ == '__main__':
     say_datetime()
